@@ -1,5 +1,19 @@
-# fancy-text (Obsolete)
-A simple Python program to convert your text to Unicode fonts that work anywhere. (No longer supported, try Secret-chest/fancify-text instead)
+# fancy-text
+
+Based on [Secret-chest/fancy-text](https://github.com/Secret-chest/fancy-text). Checkout also [Secret-chest/fancify-text](https://github.com/Secret-chest/fancify-text). 
+
+A simple Python program to convert your text to Unicode fonts that work anywhere with basic bbcode support
+
+## Usage
+
+```
+import fancy_text
+
+print(fancy_text.parse_bb_simple("[b]bold[/b]...[i]italic[/i]...[pre]monospace[/pre]"))
+
+> 𝗯𝗼𝗹𝗱...𝘪𝘵𝘢𝘭𝘪𝘤...ｍｏｎｏｓｐａｃｅ
+```
+see also `main.py`
 
 ## Fonts:
 - 𝗕𝗼𝗹𝗱
@@ -31,11 +45,7 @@ A simple Python program to convert your text to Unicode fonts that work anywhere
 - 🅱🅾🆇🅴🅳 (also uppercase-only!)
 
 ### Note:
-Lowercase letters will be automaticly replaced with uppercase ones when you use a uppercase-only font (This also applies to lowercase-only fonts!).
+Lowercase letters will be automatically replaced with uppercase ones when you use an uppercase-only font (This also applies to lowercase-only fonts!).
 
 ## Character support:
 Most fonts support only the alphabet, some support the alphabet + numbers, Monospaced supports ASCII.
-
-
-## Found a new font?
-Please leave all the Unicode characters in an issue. I will implement the font. 
